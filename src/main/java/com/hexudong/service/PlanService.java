@@ -14,4 +14,6 @@ public interface PlanService {
 
 	void tj(Plan plan);
 
+	void del(String pid);
+
 }

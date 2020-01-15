@@ -26,4 +26,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		insert into plan set pname=#{pname},did=#{did},amount=#{amount},manager=#{manager},content=#{content}
 	</insert>	
 	
+	<delete id="del">
+		delete from plan where pid in (${pid})
+	</delete>
+	
 </mapper>

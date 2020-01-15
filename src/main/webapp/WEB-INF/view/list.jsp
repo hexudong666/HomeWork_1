@@ -13,7 +13,6 @@
 <title>Insert title here</title>
 <!--日期插件--><script type="text/javascript" src="/resource/My97DatePicker/WdatePicker.js"></script>
 <!--bootstrap的css,js -->
-<link rel="stylesheet" href="/resource/bootstrap-4.3.1/css/bootstrap-reboot.min.css"/>
 <link rel="stylesheet" href="/resource/bootstrap-4.3.1/css/bootstrap.css"/> 
 <script type="text/javascript" src="/resource/bootstrap-4.3.1/js/bootstrap.js"></script> 
 <script type="text/javascript" src="/resource/js/jquery-1.8.3.js"></script>
@@ -39,6 +38,7 @@
   		<td>部门</td>
   		<td>操作
   			<input type="button" value="添加" onclick="add()">
+  			<input type="button" value="批删" onclick="delAll(${f.pid})">
   		</td>
   	</tr>
   	<c:forEach items="${list}" var="f">
@@ -54,6 +54,7 @@
   		<td>
   			<input type="button" value="详情" onclick="xq(${f.pid})">
   			<input type="button" value="更新" onclick="xg(${f.pid})">
+  			<input type="button" value="删除" onclick="del(${f.pid})">
   		</td>
   	</tr>
   	</c:forEach>
@@ -96,7 +97,19 @@
 		$("[name='cks']").attr("checked",false);
 	}
 	
+	function del(pid){
+		if (confirm("确定要删除嘛?"+pid)) {
+			location="del?pid="+pid;
+		}
+	}
 	
+	
+	function delAll(pid){
+		var pid = $("[name='cks']:checked").map(function(){
+			return this.value;
+		}).get().join();
+		location="del?pid="+pid;
+	}
 	
 </script>
 </html>

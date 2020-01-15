@@ -35,4 +35,9 @@ public class PlanServiceImpl implements PlanService {
 		mapper.tj(plan);
 	}
 	
+	@Override
+	public void del(String pid) {
+		mapper.del(pid);
+	}
+	
 }

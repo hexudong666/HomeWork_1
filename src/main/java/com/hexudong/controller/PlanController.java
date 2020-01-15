@@ -60,4 +60,11 @@ public class PlanController {
 		service.tj(plan);
 		return "redirect:/list";
 	}
+	
+	@RequestMapping("del")
+	private String del(String pid) {
+		service.del(pid);
+		return "redirect:/list";
+	}
+	
 }
