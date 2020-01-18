@@ -20,17 +20,17 @@
 </head>
 <body>
 	<form action="tj" method="post">
-	项目名称:<input type="text" name="pname">
+	项目名称:<input type="text" name="pname"><br><br>
 	所属部门:<select name="did">
 		<option value="1">市场部</option>
 		<option value="2">人事部</option>
 		<option value="3">财务部</option>
 		<option value="4">后勤部</option>
 	</select>	
-	
-	投资金额:<input type="text" name="amount">
-	分管领导:<input type="text" name="manager">
-	项目介绍:<input type="text" name="content">
+	<br><br>
+	投资金额:<input type="text" name="amount"><br><br>
+	分管领导:<input type="text" name="manager"><br><br>
+	项目介绍:<input type="text" name="content"><br><br>
 	<input type="submit" value="添加">
 	</form>
 </body>

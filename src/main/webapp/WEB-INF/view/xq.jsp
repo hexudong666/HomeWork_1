@@ -13,7 +13,6 @@
 <title>Insert title here</title>
 <!--日期插件--><script type="text/javascript" src="/resource/My97DatePicker/WdatePicker.js"></script>
 <!--bootstrap的css,js -->
-<link rel="stylesheet" href="/resource/css/index3.css"/>
 <link rel="stylesheet" href="/resource/bootstrap-4.3.1/css/bootstrap.css"/> 
 <script type="text/javascript" src="/resource/js/jquery-1.8.3.js"></script>
 <script type="text/javascript" src="/resource/bootstrap-4.3.1/js/bootstrap.js"></script> 

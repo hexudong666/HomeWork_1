@@ -53,7 +53,7 @@
   		<td>${f.dname}</td>
   		<td>
   			<input type="button" value="详情" onclick="xq(${f.pid})">
-  			<input type="button" value="更新" onclick="xg(${f.pid})">
+  			<%-- <input type="button" value="更新" onclick="xg(${f.pid})"> --%>
   			<input type="button" value="删除" onclick="del(${f.pid})">
   		</td>
   	</tr>
