@@ -30,4 +30,9 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		delete from plan where pid in (${pid})
 	</delete>
 	
+	<insert id="add">
+		INSERT INTO plan(pname,amount,manager,content,did)VALUES 
+		(#{pname},#{amount},#{manager},#{content},#{did})
+	</insert>	
+	
 </mapper>

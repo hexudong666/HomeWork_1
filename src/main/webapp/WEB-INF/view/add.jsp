@@ -26,6 +26,12 @@
 		<option value="2">人事部</option>
 		<option value="3">财务部</option>
 		<option value="4">后勤部</option>
+		<option value="5">炸药厂</option>
+		<option value="6">生产服务中心</option>
+		<option value="7">洗选车间</option>
+		<option value="8">大准铁路公司</option>
+		<option value="9">矸电公司</option>
+		<option value="10">准能选煤厂</option>
 	</select>	
 	<br><br>
 	投资金额:<input type="text" name="amount"><br><br>

@@ -18,4 +18,6 @@ public interface PlanMapper {
 
 	void del(@Param("pid")String pid);
 
+	void add(Plan plan);
+
 }

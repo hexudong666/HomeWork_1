@@ -25,7 +25,7 @@
 	<input type="submit" value="搜索">
 	
 <div class="table-responsive-xl">
-  <table class="table">
+  <table class="table" >
   	<tr>
   		<td>
   			<input type="button" value="全选" onclick="qx()">
@@ -53,7 +53,7 @@
   		<td>${f.dname}</td>
   		<td>
   			<input type="button" value="详情" onclick="xq(${f.pid})">
-  			<%-- <input type="button" value="更新" onclick="xg(${f.pid})"> --%>
+  			<%-- <input type="button" value="更新" onclick="xg(${f.pid})">    报错,类型不对Optional int parameter 'pid' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type. --%>
   			<input type="button" value="删除" onclick="del(${f.pid})">
   		</td>
   	</tr>

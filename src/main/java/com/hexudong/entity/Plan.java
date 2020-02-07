@@ -7,22 +7,21 @@ public class Plan {
 	private String amount      ;//投资金额
 	private String manager     ;//分管领导
 	private String content     ;//投资说明
-	private String did         ;//对应的部门id
+	private Integer did         ;//对应的部门id
 	
-	private String dname;//部门名称
-	private String mhname;
+	private String dname;		//部门的别称
 	
-	public String getMhname() {
-		return mhname;
-	}
-	public void setMhname(String mhname) {
-		this.mhname = mhname;
-	}
+	
 	public String getDname() {
 		return dname;
 	}
 	public void setDname(String dname) {
 		this.dname = dname;
+	}
+	@Override
+	public String toString() {
+		return "Plan [pid=" + pid + ", pname=" + pname + ", amount=" + amount + ", manager=" + manager + ", content="
+				+ content + ", did=" + did + "]";
 	}
 	public Integer getPid() {
 		return pid;
@@ -54,16 +53,24 @@ public class Plan {
 	public void setContent(String content) {
 		this.content = content;
 	}
-	public String getDid() {
+	public Integer getDid() {
 		return did;
 	}
-	public void setDid(String did) {
+	public void setDid(Integer did) {
 		this.did = did;
 	}
-	@Override
-	public String toString() {
-		return "Plan [pid=" + pid + ", pname=" + pname + ", amount=" + amount + ", manager=" + manager + ", content="
-				+ content + ", did=" + did + ", dname=" + dname + "]";
+	public Plan(Integer pid, String pname, String amount, String manager, String content, Integer did) {
+		super();
+		this.pid = pid;
+		this.pname = pname;
+		this.amount = amount;
+		this.manager = manager;
+		this.content = content;
+		this.did = did;
 	}
-
+	public Plan() {
+		super();
+	}
+	
+	
 }
